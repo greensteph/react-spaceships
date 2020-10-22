@@ -12,9 +12,14 @@ export class AddShipForm extends React.Component {
         })
     }
 
+    handleSubmit(event) {
+        event.preventDefault();
+        this.props.addShip(this.state.entry); 
+    }
+
     render() {
         return (
-            <form onSubmit={HANDLE SUBMIT}>
+            <form onSubmit={this.handleSubmit.bind(this)}>
                 <input 
                     onChange={this.handleInput.bind(this)}
                     placeholder={this.state.entry}
