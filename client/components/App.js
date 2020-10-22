@@ -11,13 +11,15 @@ export default class App extends Component {
       ships: spaceships
     };
 
-    this.handleSubmitNewSpaceship = this.handleSubmitNewSpaceship.bind(this)
+    this.addShip = this.addShip.bind(this);
   }
 
-  handleSubmitNewSpaceship(event) {
-    this.setState({
-      ships: event.target.value
-    })
+  addShip(newShip) {
+    let newShipList = this.state.ships.slice();
+    newShipList.push({
+      name: newShip
+    });
+    this.setState({ships: newShipList})
   }
   
   componentDidMount() {
