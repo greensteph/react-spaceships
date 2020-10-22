@@ -4,7 +4,7 @@ export const SpaceShips = (props) => {
     return (
         <ul>
         {props.spaceships.map((ship) => {
-            return <li>{ship.name}</li>
+            return <li key={ship.id}>{ship.name}</li>
         })}
         </ul>
     )
