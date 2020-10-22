@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { spaceships } from '../../dummyData';
 import { SpaceShips } from './SpaceShips';
+import { AddShipForm} from './AddShipForm';
 
 export default class App extends Component {
   constructor(props) {
@@ -27,6 +28,7 @@ export default class App extends Component {
     return (
       <div>
         <h2>Our Ships</h2>
+        <AddShipForm /> 
         <SpaceShips spaceships={this.state.ships} />
       </div>
     );
