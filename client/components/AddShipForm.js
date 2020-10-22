@@ -6,11 +6,17 @@ export class AddShipForm extends React.Component {
         this.state = {entry: 'Add a ship here'}
     }
 
+    handleInput(event) { 
+        this.setState ({
+             entry: event.target.value 
+        })
+    }
+
     render() {
         return (
-            <form>
+            <form onSubmit={HANDLE SUBMIT}>
                 <input 
-                    onChange={HANDLE THE INPUT}
+                    onChange={this.handleInput.bind(this)}
                     placeholder={this.state.entry}
                 />
                 <button>Add a Ship!</button>
