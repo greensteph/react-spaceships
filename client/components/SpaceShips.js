@@ -1,7 +1,9 @@
 const SpaceShips = (props) => {
     return (
         <ul>
-        {props.spaceships}
+        {props.spaceships.map((ship) => {
+            return <li>{ship.name}</li>
+        })}
         </ul>
     )
 }
