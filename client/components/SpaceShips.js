@@ -1,4 +1,6 @@
-const SpaceShips = (props) => {
+import React from 'react';
+
+export const SpaceShips = (props) => {
     return (
         <ul>
         {props.spaceships.map((ship) => {
