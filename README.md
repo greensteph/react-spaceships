@@ -1,6 +1,6 @@
 ## Spaceship App
 ---
-In this exercise, you will practice some bsaic React skills (creating class and functional components, passing props, accessing props). As you work through this exercise, pay attention to the data flow and how front-end applications can be put together.
+In this exercise, you will practice some basic React skills (creating class and functional components, passing props, accessing props). As you work through this exercise, pay attention to the data flow and how front-end applications can be put together.
 
 ### Objectives
 * Initialize state appropriately
