@@ -14,7 +14,7 @@ export class AddShipForm extends React.Component {
 
     handleSubmit(event) {
         event.preventDefault();
-        this.props.addShip(this.state.entry); 
+        this.props.onFormSubmit(this.state.entry); 
     }
 
     render() {

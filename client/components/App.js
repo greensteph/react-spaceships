@@ -28,7 +28,7 @@ export default class App extends Component {
     return (
       <div>
         <h2>Our Ships</h2>
-        <AddShipForm /> 
+        <AddShipForm onFormSubmit={this.addShip}/> 
         <SpaceShips spaceships={this.state.ships} />
       </div>
     );
